@@ -1,0 +1,20 @@
+body{
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poppins:ital,wght@0,100;0,200;1,400;1,500&display=swap');
+
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 70px;
+    background-color: rgb(40, 40, 67)
+}
+
+.navbar{
+
+    background-color: rgb(63, 73, 97);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+h1{
+    font-size: 100px;
+    color: white;
+    display: inline-block;
+
+}
