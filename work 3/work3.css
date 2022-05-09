@@ -1,20 +1,44 @@
 body{
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poppins:ital,wght@0,100;0,200;1,400;1,500&display=swap');
-
     font-family: 'Poppins', sans-serif;
     margin: 30px 70px;
     background-color: rgb(40, 40, 67)
 }
-
 .navbar{
-
     background-color: rgb(63, 73, 97);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-h1{
+header h1{
     font-size: 100px;
     color: white;
     display: inline-block;
+}
+section{
+    display: flex;
+    background: white;
+    width: 100%;
+}
+.one{
+    width: 30%;
+    color: #5b1648;
+}
 
+a.nav-link {
+    text-decoration: none;
+    border-bottom: 2px dotted #7e2967;
+    color: #862d6e;
+}
+article{
+    width: 70%;
+    padding: 40px 20px 0;
+}
+footer{
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: rgb(205, 199, 199);
+    background-color: rgb(92, 61, 61);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
