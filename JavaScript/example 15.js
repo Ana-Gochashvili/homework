@@ -1,12 +1,12 @@
 let test = "some text??";
 
-if(typeof test === 'string'){
-    if(test.includes('?')) {
+if (typeof test === 'string') {
+    if (test.includes('?')) {
         console.log(true);
-    }else {
+    } else {
         console.log(false);
     }
-}else{
+} else {
     throw "It is not a string";
 }
 
