@@ -1,12 +1,16 @@
-let test = "some text??";
+let test = '487';
 
-if (typeof test === 'string') {
-    if (test.includes('?')) {
-        console.log(true);
+is_string(test);
+
+function is_string(x) {
+    if (typeof x === 'string') {
+        if (x.includes('?')) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
     } else {
-        console.log(false);
+        throw new Error("It is not a string");
     }
-} else {
-    throw "It is not a string";
 }
 
