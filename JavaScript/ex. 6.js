@@ -5,3 +5,5 @@ console.log(array
     .map((item) => item < 0 ? item * (-1) : item)
     .reduce((total, num) => total * num, 1)
 )
+
+

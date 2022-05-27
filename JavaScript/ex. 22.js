@@ -1,8 +1,8 @@
 function myDate() {
 
-    console.log(new Date);
+    console.log(new Date());
 
 }
 
-setInterval(myDate, 5000);
+//setInterval(myDate, 5000);
 

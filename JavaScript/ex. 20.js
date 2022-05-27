@@ -1,3 +1,4 @@
+
 const urls = [
     'https://www.facebook.com',
     'http://google.com',
@@ -11,4 +12,5 @@ const urls = [
 urls
     .filter((url) => url.includes('http'))
     .forEach((url) => console.log(url))
+
 
