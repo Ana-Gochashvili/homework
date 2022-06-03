@@ -1,13 +1,11 @@
 const style = {
     display: 'flex',
     background: 'white',
-    padding: 1,
+    padding: 10,
 }
-const navStyle = {
-    width: '30%'
-}
+
 const artStyle = {
-    padding: 30,
+    padding: 35,
     width: '70%'
 }
 const navList = {
@@ -20,46 +18,30 @@ const navList = {
     paddingBottom: 10,
 }
 
-const navLink = {
-    textDecoration: 'none',
-    border: 2,
-    borderBottomStyle: 'dotted',
-    borderColor: '#7e2967',
-    color: '#862d6e',
-    paddingLeft: 30,
-    paddingBottom: 10,
-}
-
-const list = ['Home', 'About', 'Interesting Things', 'Boring Things', 'Contact'];
+const list = [
+    {id: "https://www.w3schools.com/js/js_math.asp", text: 'Home'},
+    {id: "https://www.w3schools.com/js/js_json_intro.asp", text: 'About'},
+    {id: "https://www.w3schools.com/react/default.asp", text: 'Interesting Things'},
+    {id: "https://www.w3schools.com/nodejs/ref_modules.asp", text: 'Boring Things'},
+    {id: "https://www.w3schools.com/nodejs/nodejs_intro.asp", text: 'Contact'},
+];
 
 function Section() {
     return (
         <section style={style}>
-            <nav style={navStyle}>
+            <nav style={{width: '30%'}}>
                 <div>
-                    {/*პირველი ვარიანტი*/}
-                    {/* <ul >
+
+                    <ul>
                         {
-                            list.map((link)=> (<li style={navList}> {link} </li>))
+                            list.map((link) =>
+                                (<li style={navList}>
+                                    <a style={{textDecoration: 'none'}} href={link.id}>{link.text}</a>
+                                </li>))
                         }
-                    </ul>*/}
+                    </ul>
 
-                    {/*მეორე ვარიანტი*/}
-                    {/*<div >
-                        {
-                            list.map((link)=> (<p style={navLink}> {link} </p>))
-                        }
-                    </div>*/}
-
-                    {/*მესამე ვარიანტი*/}
-
-                    <p style={navLink}><a style={{textDecoration: 'none'}} href="">Home</a></p>
-                    <p style={navLink}><a style={{textDecoration: 'none'}} href="">About</a></p>
-                    <p style={navLink}><a style={{textDecoration: 'none'}} href="">Interesting Things</a></p>
-                    <p style={navLink}><a style={{textDecoration: 'none'}} href="">Boring Things</a></p>
-                    <p style={navLink}><a style={{textDecoration: 'none'}} href="">Contact</a></p>
-
-                    <p style={{paddingLeft: 30, color: 'rgb(40, 40, 67)'}}>Lorem ipsum dolor sit amet, consectetur
+                    <p style={{paddingLeft: 40, color: 'rgb(40, 40, 67)'}}>Lorem ipsum dolor sit amet, consectetur
                         adipiscing
                         elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

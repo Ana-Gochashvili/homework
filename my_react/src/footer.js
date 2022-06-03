@@ -1,6 +1,5 @@
 const style = {
-    margin: 0,
-    padding: 15,
+    padding: 20,
     textAlign: 'center',
     color: 'rgb(205, 199, 199)',
     backgroundColor: 'rgb(92, 61, 61)',
@@ -9,8 +8,6 @@ const style = {
 }
 
 function Footer({text}) {
-
-
     return (
         <footer style={style}>
             {text}
