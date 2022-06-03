@@ -1,13 +1,16 @@
-class Point {
+export default class Point {
     #x;
     #y;
+
     constructor(x, y) {
         this.#x = x;
         this.#y = y;
     }
+
     get x() {
         return this.#x;
     }
+
     get y() {
         return this.#y;
     }
@@ -28,4 +31,4 @@ console.log(point1);
 
 console.log(point2.distance(point1));
 
-console.log(toString(point1));
+console.log(point1.toString);

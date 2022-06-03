@@ -17,7 +17,7 @@ function Header({title}) {
     return (
         <header style={style}>
             <div style={{textAlign: 'center', alignContent: 'bottom', width: '30%'}}>
-                <img src="/sample-page.png" alt={'logo'} style={{width: "200px", borderTopLeftRadius: 35}}/>
+                <img src="/sample-page.png" alt="image" style={{width: "200px", borderTopLeftRadius: 35}}/>
             </div>
 
             <div>
